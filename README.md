@@ -1,9 +1,9 @@
 # NNCodeCoverage
 
-[![CI Status](https://img.shields.io/travis/NeroXie/NNCodeCoverage.svg?style=flat)](https://travis-ci.org/NeroXie/NNCodeCoverage)
+<!--[![CI Status](https://img.shields.io/travis/NeroXie/NNCodeCoverage.svg?style=flat)](https://travis-ci.org/NeroXie/NNCodeCoverage)
 [![Version](https://img.shields.io/cocoapods/v/NNCodeCoverage.svg?style=flat)](https://cocoapods.org/pods/NNCodeCoverage)
 [![License](https://img.shields.io/cocoapods/l/NNCodeCoverage.svg?style=flat)](https://cocoapods.org/pods/NNCodeCoverage)
-[![Platform](https://img.shields.io/cocoapods/p/NNCodeCoverage.svg?style=flat)](https://cocoapods.org/pods/NNCodeCoverage)
+[![Platform](https://img.shields.io/cocoapods/p/NNCodeCoverage.svg?style=flat)](https://cocoapods.org/pods/NNCodeCoverage)-->
 
 ## 简介
 
@@ -21,8 +21,10 @@ NNCodeCoverage用来统计Swift & Objective-C 工程的代码全量或增量覆�
 NNCodeCoverage 组件是用来监听代码执行情况，在Podfile 文件中添加以下代码：
 
 ```ruby
-pod 'NNCodeCoverage'
+ pod 'NNCodeCoverage', :path => 'xxx/xxx' # 覆盖率监听器组件
 ```
+
+NNCodeCoverage 组件暂时使用path的方式进行集成。
 
 ### 2. Xcode中打开Code Coverage选项
 

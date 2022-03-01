@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.author           = { 'NeroXie' => 'xyh30902@163.com' }
   s.source           = { :git => 'https://github.com/YiHuaXie/NNCodeCoverage.git', :tag => s.version.to_s }
   s.ios.deployment_target = '10.0'
+  s.static_framework = true
   s.source_files = 'NNCodeCoverage/Classes/**/*'
   s.module_map = 'NNCodeCoverage/module.modulemap'
   
