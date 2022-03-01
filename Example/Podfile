@@ -1,0 +1,34 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+root_dir = File.expand_path("..", Pod::Config.instance.installation_root)
+require_relative "#{root_dir}/coverage_scripts/coverage_config.rb"
+
+target 'Coverage_Example' do
+  pod 'NNCodeCoverage', :path => '../' # 覆盖率监听器组件
+  pod 'OCTestModule', :path => '../Modules/OCTestModule'
+  pod 'SwiftTestModule', :path => '../Modules/SwiftTestModule'
+  pod 'SnapKit'
+  pod 'MBProgressHUD'
+  pod 'Kingfisher'
+  
+end
+
+# 重置覆盖率配置的标记
+$coverage_recover = false
+# 设置需要获取覆盖率的组件为二进制形式，Development Pods中的组件想要获取代码覆盖率，需要添加到该数组中
+$static_frameworks = ['MBProgressHUD', 'SwiftTestModule', 'OCTestModule']
+
+# 初始化配置
+coverage_setup($coverage_recover)
+
+pre_install do |installer|
+  # 设置组件为二进制形式
+  coverage_static_frameworks_config($static_frameworks, installer)
+end
+
+post_install do |installer|
+  # pod project配置
+  coverage_pods_project_config(installer, $coverage_recover)
+end

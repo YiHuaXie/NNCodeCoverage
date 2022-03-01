@@ -1,0 +1,3 @@
+framework module OCTestModule {
+    umbrella header "OCTestModuleKit.h"
+}

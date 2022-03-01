@@ -1,0 +1,41 @@
+PODS:
+  - Kingfisher (6.3.1)
+  - MBProgressHUD (1.2.0)
+  - NNCodeCoverage (1.0.0)
+  - OCTestModule (0.1.0)
+  - SnapKit (5.0.1)
+  - SwiftTestModule (0.1.0)
+
+DEPENDENCIES:
+  - Kingfisher
+  - MBProgressHUD
+  - NNCodeCoverage (from `../`)
+  - OCTestModule (from `../Modules/OCTestModule`)
+  - SnapKit
+  - SwiftTestModule (from `../Modules/SwiftTestModule`)
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - MBProgressHUD
+    - SnapKit
+
+EXTERNAL SOURCES:
+  NNCodeCoverage:
+    :path: "../"
+  OCTestModule:
+    :path: "../Modules/OCTestModule"
+  SwiftTestModule:
+    :path: "../Modules/SwiftTestModule"
+
+SPEC CHECKSUMS:
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  NNCodeCoverage: a5f5e632ceecd13011700e2bd7bf090ee62e5649
+  OCTestModule: 442069d97899d8a2f33035a05b2262d3a4881b83
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftTestModule: efa26ff721d0274a67c0e5435eeb7b2ac8e60e37
+
+PODFILE CHECKSUM: 42c20bbe4ad29e380cd403846d8adc04893a9600
+
+COCOAPODS: 1.10.0

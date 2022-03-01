@@ -1,0 +1,3 @@
+framework module NNCodeCoverage {
+    umbrella header "NNCodeCoverageKit.h"
+}
