@@ -7,12 +7,6 @@
 
 #import "NNCodeCoverageManager.h"
 
-void __llvm_profile_initialize_file(void);
-void __llvm_profile_set_filename(const char *);
-const char *__llvm_profile_get_filename(void);
-int __llvm_profile_write_file(void);
-int __llvm_profile_register_write_file_atexit(void);
-
 @interface NNCodeCoverageManager ()
 
 @property (nonatomic, copy) NSString *profrawPath;
@@ -22,6 +16,12 @@ int __llvm_profile_register_write_file_atexit(void);
 @end
 
 @implementation NNCodeCoverageManager
+
+void __llvm_profile_initialize_file(void);
+void __llvm_profile_set_filename(const char *);
+const char *__llvm_profile_get_filename(void);
+int __llvm_profile_write_file(void);
+int __llvm_profile_register_write_file_atexit(void);
 
 #pragma mark - Lifecycle Method
 

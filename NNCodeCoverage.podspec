@@ -11,14 +11,10 @@ Pod::Spec.new do |s|
   s.version          = '1.0.0'
   s.summary          = 'iOS code coverage, supports OC and swift.'
   s.homepage         = 'https://github.com/YiHuaXie/NNCodeCoverage'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'NeroXie' => 'xyh30902@163.com' }
   s.source           = { :git => 'https://github.com/YiHuaXie/NNCodeCoverage.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
   s.ios.deployment_target = '10.0'
-  s.static_framework = true
   s.source_files = 'NNCodeCoverage/Classes/**/*'
   s.module_map = 'NNCodeCoverage/module.modulemap'
   
