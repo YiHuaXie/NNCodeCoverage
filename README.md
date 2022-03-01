@@ -30,7 +30,7 @@ pod 'NNCodeCoverage'
 
 ### 3. 脚本安装
 
-将[coverage_scripts]()连同文件夹拷贝至你的电脑任一位置。
+将[coverage_scripts](./coverage_scripts)连同文件夹拷贝至你的电脑任一位置。
 
 ![coverage scripts文件夹](https://neroblog.oss-cn-hangzhou.aliyuncs.com/nn_code_coverage_script_files.jpg)
 
